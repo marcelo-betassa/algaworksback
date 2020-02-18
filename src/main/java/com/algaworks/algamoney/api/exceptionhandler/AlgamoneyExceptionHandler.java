@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import com.algaworks.algamoney.api.service.exception.LancamentoInexistenteExecption;
 import com.algaworks.algamoney.api.service.exception.PessoaInexistenteOuInativaException;
 
 @ControllerAdvice
@@ -80,6 +81,14 @@ public class AlgamoneyExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler({PessoaInexistenteOuInativaException.class})
 	public ResponseEntity<Object> handlePessoaInexistenteOuInativaException(PessoaInexistenteOuInativaException ex){
 		String mensagemUsuario = messageSource.getMessage("pessoa.inexistente-ou-inativa", null, LocaleContextHolder.getLocale());
+		String mensagemDesenvolvedor = Optional.ofNullable( ex.getCause()).orElse(ex).toString();
+		List<Erro> erros = Arrays.asList(erro = new Erro(mensagemUsuario, mensagemDesenvolvedor));
+		return ResponseEntity.badRequest().body(erros);
+	}
+	
+	@ExceptionHandler({LancamentoInexistenteExecption.class})
+	public ResponseEntity<Object> handleLancamentoInexistenteExecption(LancamentoInexistenteExecption ex){
+		String mensagemUsuario = messageSource.getMessage("lancamento.inexistente", null, LocaleContextHolder.getLocale());
 		String mensagemDesenvolvedor = Optional.ofNullable( ex.getCause()).orElse(ex).toString();
 		List<Erro> erros = Arrays.asList(erro = new Erro(mensagemUsuario, mensagemDesenvolvedor));
 		return ResponseEntity.badRequest().body(erros);
