@@ -64,3 +64,402 @@
 2020-02-18 00:22:32.374  INFO 14024 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-02-18 00:22:32.376  INFO 14024 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-02-18 00:22:32.381  INFO 14024 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-18 21:32:46.714  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-18 21:32:46.715  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: basic-security
+2020-02-18 21:32:46.750  INFO 12756 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Marcelo\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Marcelo/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-18 21:32:46.750  INFO 12756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-18 21:32:46.750  INFO 12756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-18 21:32:47.283  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-18 21:32:47.333  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 4 JPA repository interfaces.
+2020-02-18 21:32:47.535  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 21:32:47.822  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-18 21:32:47.827  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-18 21:32:47.827  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-18 21:32:47.903  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-18 21:32:47.904 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-18 21:32:47.904  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1153 ms
+2020-02-18 21:32:47.981  INFO 12756 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-02-18 21:32:47.983  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-18 21:32:48.060  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-18 21:32:48.064  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-18 21:32:48.174  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.034s)
+2020-02-18 21:32:48.187  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-18 21:32:48.188  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-18 21:32:48.257  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-18 21:32:48.295  INFO 12756 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 21:32:48.362  INFO 12756 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 21:32:48.420  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-18 21:32:48.906  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 21:32:48.910  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-18 21:32:48.939  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-18 21:32:49.319  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6417b75, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d524543, org.springframework.security.web.header.HeaderWriterFilter@29293cdd, org.springframework.security.web.authentication.logout.LogoutFilter@5bd260fd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27a36a36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2639b627, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74bfe1ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a0122e8, org.springframework.security.web.session.SessionManagementFilter@40f274a5, org.springframework.security.web.access.ExceptionTranslationFilter@10a13f36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8934d2c]
+2020-02-18 21:32:49.416  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-18 21:32:49.428 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-18 21:32:49.469 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-18 21:32:49.492 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-18 21:32:49.501 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-18 21:32:49.575  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-18 21:32:49.627  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-18 21:32:49.629  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 3.137 seconds (JVM running for 3.854)
+2020-02-18 22:02:57.438  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-18 22:02:57.438  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-18 22:02:57.439 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-18 22:02:57.443 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-18 22:02:57.443  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-02-18 22:07:04.015 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/oauth/token", parameters={masked}
+2020-02-18 22:07:04.019 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-02-18 22:07:04.022 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-02-18 22:07:04.022 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-02-18 22:07:04.023 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-02-18 22:07:04.024 DEBUG 12756 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-02-18 22:07:04.048 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-02-18 22:07:04.048 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 19 01:07:04 UTC 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-02-18 22:07:04.079 DEBUG 12756 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-02-18 22:11:07.563 DEBUG 12756 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-02-18 22:11:07.564 DEBUG 12756 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-02-18 22:11:07.565 DEBUG 12756 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-02-18 22:11:07.565 DEBUG 12756 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 19 01:11:07 UTC 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-02-18 22:11:07.566 DEBUG 12756 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-02-18 22:11:33.453 DEBUG 12756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-02-18 22:11:33.453 DEBUG 12756 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-02-18 22:11:33.454 DEBUG 12756 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-02-18 22:11:33.454 DEBUG 12756 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 19 01:11:33 UTC 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-02-18 22:11:33.455 DEBUG 12756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-02-18 22:11:34.325 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2020-02-18 22:11:34.325 DEBUG 12756 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-02-18 22:11:34.326 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-02-18 22:11:34.326 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Feb 19 01:11:34 UTC 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-02-18 22:11:34.327 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-02-18 22:21:55.869  INFO 12756 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-18 22:21:55.870  INFO 12756 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-18 22:21:55.872  INFO 12756 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-18 22:21:55.876  INFO 12756 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-19 01:21:56.165  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 01:21:56.165  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: basic-security
+2020-02-19 01:21:56.308  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 01:21:56.326  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 4 JPA repository interfaces.
+2020-02-19 01:21:56.370  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 01:21:56.443  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 01:21:56.443  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 01:21:56.443  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 01:21:56.460  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 01:21:56.460 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 01:21:56.460  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 293 ms
+2020-02-19 01:21:56.486  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-19 01:21:56.490  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-19 01:21:56.490  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 01:21:56.508  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.010s)
+2020-02-19 01:21:56.517  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 01:21:56.518  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 01:21:56.533  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 01:21:56.536  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 01:21:56.632  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 01:21:56.632  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:21:56.646  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 01:21:56.734  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@620a02d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@49369fcd, org.springframework.security.web.header.HeaderWriterFilter@53f5e1da, org.springframework.security.web.authentication.logout.LogoutFilter@7f7dd41c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@447b6de3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c1aec6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9d3906, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3566e214, org.springframework.security.web.session.SessionManagementFilter@4538edef, org.springframework.security.web.access.ExceptionTranslationFilter@2302d366, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@698909f5]
+2020-02-19 01:21:56.764  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:21:56.766 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 01:21:56.773 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 01:21:56.781 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 01:21:56.786 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 01:21:56.809  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 01:21:56.821  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 01:21:56.822  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.673 seconds (JVM running for 2951.046)
+2020-02-19 01:21:56.823  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-19 01:22:29.097  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-19 01:22:29.098  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-19 01:22:29.098 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-19 01:22:29.107 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-19 01:22:29.107  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-02-19 01:42:40.101  INFO 12756 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:42:40.101  INFO 12756 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:42:40.102  INFO 12756 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-19 01:42:40.107  INFO 12756 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-19 01:42:40.384  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 01:42:40.384  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: basic-security
+2020-02-19 01:42:40.501  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 01:42:40.516  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 4 JPA repository interfaces.
+2020-02-19 01:42:40.556  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 01:42:40.625  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 01:42:40.626  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 01:42:40.626  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 01:42:40.635  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 01:42:40.635 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 01:42:40.636  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 250 ms
+2020-02-19 01:42:40.659  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-19 01:42:40.663  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-19 01:42:40.663  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 01:42:40.675  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.006s)
+2020-02-19 01:42:40.681  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 01:42:40.681  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 01:42:40.693  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 01:42:40.695  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 01:42:40.768  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 01:42:40.768  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:42:40.783  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 01:42:40.860  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61eb3277, org.springframework.security.web.context.SecurityContextPersistenceFilter@2feab604, org.springframework.security.web.header.HeaderWriterFilter@542c7ebe, org.springframework.security.web.authentication.logout.LogoutFilter@8c4c053, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@363530e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75709d41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@429ec4df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70cf1dc6, org.springframework.security.web.session.SessionManagementFilter@612a3c05, org.springframework.security.web.access.ExceptionTranslationFilter@48325e56, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31695b71]
+2020-02-19 01:42:40.887  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:42:40.889 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 01:42:40.896 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 01:42:40.903 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 01:42:40.906 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 01:42:40.925  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 01:42:40.935  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 01:42:40.936  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.567 seconds (JVM running for 4195.16)
+2020-02-19 01:42:40.937  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-19 01:43:17.878  INFO 12756 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-19 01:43:17.879  INFO 12756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-19 01:43:17.879 DEBUG 12756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-19 01:43:17.886 DEBUG 12756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-19 01:43:17.886  INFO 12756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-02-19 01:53:12.769  INFO 12756 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:53:12.769  INFO 12756 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:53:12.770  INFO 12756 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-02-19 01:53:12.774  INFO 12756 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-02-19 01:53:13.086  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 01:53:13.086  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: basic-security
+2020-02-19 01:53:13.207  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 01:53:13.225  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 4 JPA repository interfaces.
+2020-02-19 01:53:13.267  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 01:53:13.341  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 01:53:13.341  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 01:53:13.341  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 01:53:13.351  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 01:53:13.351 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 01:53:13.351  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 263 ms
+2020-02-19 01:53:13.380  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-02-19 01:53:13.384  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-02-19 01:53:13.384  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 01:53:13.398  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.007s)
+2020-02-19 01:53:13.404  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 01:53:13.405  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 01:53:13.418  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 01:53:13.421  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 01:53:13.506  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 01:53:13.507  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:53:13.522  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 01:53:13.612  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@389c1dd4, org.springframework.security.web.context.SecurityContextPersistenceFilter@c81b5d5, org.springframework.security.web.header.HeaderWriterFilter@49fc2e6d, org.springframework.security.web.authentication.logout.LogoutFilter@38b4485e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@45d5597, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eb4ad00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76936ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fec18a, org.springframework.security.web.session.SessionManagementFilter@4990dad0, org.springframework.security.web.access.ExceptionTranslationFilter@6756a63b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e63bcb8]
+2020-02-19 01:53:13.643  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:53:13.645 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 01:53:13.650 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 01:53:13.659 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 01:53:13.664 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 01:53:13.688  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 01:53:13.700  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 01:53:13.700  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.632 seconds (JVM running for 4827.925)
+2020-02-19 01:53:13.701  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-19 01:53:20.495  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-19 01:53:20.496  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-19 01:53:20.496 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-19 01:53:20.502 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-19 01:53:20.503  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-02-19 01:55:23.725  INFO 12756 --- [Thread-29] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:55:23.726  INFO 12756 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:55:23.727  INFO 12756 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2020-02-19 01:55:23.731  INFO 12756 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2020-02-19 01:55:24.046  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 01:55:24.046  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: basic-security
+2020-02-19 01:55:24.167  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 01:55:24.183  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 4 JPA repository interfaces.
+2020-02-19 01:55:24.225  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 01:55:24.295  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 01:55:24.296  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 01:55:24.296  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 01:55:24.305  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 01:55:24.305 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 01:55:24.305  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 257 ms
+2020-02-19 01:55:24.329  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2020-02-19 01:55:24.333  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2020-02-19 01:55:24.334  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 01:55:24.346  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.007s)
+2020-02-19 01:55:24.353  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 01:55:24.354  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 01:55:24.366  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 01:55:24.368  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 01:55:24.442  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 01:55:24.442  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:55:24.458  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 01:55:24.545  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e5bcdfc, org.springframework.security.web.context.SecurityContextPersistenceFilter@353bb6a3, org.springframework.security.web.header.HeaderWriterFilter@7e7c72dc, org.springframework.security.web.authentication.logout.LogoutFilter@77a78fda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@19a2f842, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c6628bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@191537f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ce320fd, org.springframework.security.web.session.SessionManagementFilter@3f043943, org.springframework.security.web.access.ExceptionTranslationFilter@1b564455, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@808b8ea]
+2020-02-19 01:55:24.573  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:55:24.575 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 01:55:24.580 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 01:55:24.587 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 01:55:24.591 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 01:55:24.612  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 01:55:24.622  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 01:55:24.623  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.592 seconds (JVM running for 4958.847)
+2020-02-19 01:55:24.624  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-19 01:56:28.664  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-19 01:56:28.665  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-19 01:56:28.665 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-19 01:56:28.670 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-19 01:56:28.670  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-02-19 01:58:43.230  INFO 12756 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:58:43.230  INFO 12756 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:58:43.231  INFO 12756 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-02-19 01:58:43.235  INFO 12756 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-02-19 01:58:43.502  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 01:58:43.502  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: oauth-securityy
+2020-02-19 01:58:43.613  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 01:58:43.630  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 4 JPA repository interfaces.
+2020-02-19 01:58:43.668  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 01:58:43.735  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 01:58:43.736  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 01:58:43.736  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 01:58:43.745  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 01:58:43.745 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 01:58:43.745  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 242 ms
+2020-02-19 01:58:43.767  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2020-02-19 01:58:43.772  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2020-02-19 01:58:43.773  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 01:58:43.784  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.006s)
+2020-02-19 01:58:43.789  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 01:58:43.790  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 01:58:43.802  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 01:58:43.804  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 01:58:43.874  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 01:58:43.875  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 01:58:43.960  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 01:58:43.984  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 01:58:43.986 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 01:58:43.993 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 01:58:44.002 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 01:58:44.005 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 01:58:44.036  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7285fb75, org.springframework.security.web.context.SecurityContextPersistenceFilter@46831249, org.springframework.security.web.header.HeaderWriterFilter@7b29ba55, org.springframework.security.web.csrf.CsrfFilter@767bb924, org.springframework.security.web.authentication.logout.LogoutFilter@1c4f486b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37d2b086, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ef9d9cf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f9e5ac5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50f1276d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca4042a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a69e6f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58e0390f, org.springframework.security.web.session.SessionManagementFilter@50309e8d, org.springframework.security.web.access.ExceptionTranslationFilter@1721a390, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b533f11]
+2020-02-19 01:58:44.046  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 01:58:44.057  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 01:58:44.057  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.572 seconds (JVM running for 5158.281)
+2020-02-19 01:58:44.061  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$DefaultConfigurerAdapter'; @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-02-19 01:59:15.361  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-19 01:59:15.361  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-19 01:59:15.361 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-02-19 01:59:15.365 DEBUG 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-02-19 01:59:15.365  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-02-19 02:04:48.564  INFO 12756 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 02:04:48.564  INFO 12756 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 02:04:48.565  INFO 12756 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2020-02-19 02:04:48.569  INFO 12756 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2020-02-19 02:04:48.938  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Starting AlgamoneyApiApplication on DESKTOP-I4JN2G3 with PID 12756 (E:\workspace-sts\algamoney-api\target\classes started by Marcelo in E:\workspace-sts\algamoney-api)
+2020-02-19 02:04:48.938  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : The following profiles are active: oauth-security
+2020-02-19 02:04:49.080  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-19 02:04:49.094  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 4 JPA repository interfaces.
+2020-02-19 02:04:49.142  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.148  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.149  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.150  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@709c7d3a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.151  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'resourceServerConfig' of type [com.algaworks.algamoney.api.config.ResourceServerConfig$$EnhancerBySpringCGLIB$$191ae4d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.154  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'createExpressionHandler' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.154  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.155  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-19 02:04:49.236  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-19 02:04:49.236  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-19 02:04:49.236  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-19 02:04:49.245  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-19 02:04:49.245 DEBUG 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-02-19 02:04:49.245  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 305 ms
+2020-02-19 02:04:49.279  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2020-02-19 02:04:49.283  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2020-02-19 02:04:49.284  INFO 12756 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/algamoneyapi (MySQL 8.0)
+2020-02-19 02:04:49.297  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.006s)
+2020-02-19 02:04:49.302  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `algamoneyapi`: 04
+2020-02-19 02:04:49.303  INFO 12756 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `algamoneyapi` is up to date. No migration necessary.
+2020-02-19 02:04:49.317  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-19 02:04:49.319  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 02:04:49.386  INFO 12756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 02:04:49.386  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-19 02:04:49.406  WARN 12756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-19 02:04:49.535  WARN 12756 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-02-19 02:04:49.681  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76f366f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@571c0060, org.springframework.security.web.header.HeaderWriterFilter@d2a48c1, org.springframework.security.web.authentication.logout.LogoutFilter@2dd8c695, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a2ef04e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c86a7bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43b588aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48241bb2, org.springframework.security.web.session.SessionManagementFilter@5bef4f74, org.springframework.security.web.access.ExceptionTranslationFilter@71374cd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2131a813]
+2020-02-19 02:04:49.687  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@7b0fd363, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8a41349, org.springframework.security.web.context.SecurityContextPersistenceFilter@58d23fe6, org.springframework.security.web.header.HeaderWriterFilter@40ed7707, org.springframework.security.web.authentication.logout.LogoutFilter@708d79c1, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3123043f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5244571a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@793a471a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dc46ac3, org.springframework.security.web.session.SessionManagementFilter@176aef3f, org.springframework.security.web.access.ExceptionTranslationFilter@b202789, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9ed3041]
+2020-02-19 02:04:49.694  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f3e78ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c65cb82, org.springframework.security.web.header.HeaderWriterFilter@4c8c0d8d, org.springframework.security.web.csrf.CsrfFilter@d264a5e, org.springframework.security.web.authentication.logout.LogoutFilter@1c415c04, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bb71d5b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6063bed5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7099bd5e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@581a4be0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f5a27a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@316b7ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63573bd3, org.springframework.security.web.session.SessionManagementFilter@132e0703, org.springframework.security.web.access.ExceptionTranslationFilter@1dd3cdf3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@617fc8e7]
+2020-02-19 02:04:49.733  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-19 02:04:49.737 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2020-02-19 02:04:49.745 DEBUG 12756 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2020-02-19 02:04:49.762 DEBUG 12756 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-02-19 02:04:49.768 DEBUG 12756 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2020-02-19 02:04:49.802  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-19 02:04:49.814  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-19 02:04:49.815  INFO 12756 --- [restartedMain] c.a.a.api.AlgamoneyApiApplication        : Started AlgamoneyApiApplication in 0.893 seconds (JVM running for 5524.039)
+2020-02-19 02:04:49.817  INFO 12756 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' OAuthSecurityConfig, org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerSecurityConfiguration, org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
