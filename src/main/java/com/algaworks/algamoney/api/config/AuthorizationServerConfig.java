@@ -37,8 +37,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 			.secret("$2a$10$TZUyFkp1X2F2ymKdey/atu44n8gSyIRLDmg6ly5Q.E5ETFxmz2jM2") //@ngul@r0
 			.scopes("read", "write")
 			.authorizedGrantTypes("password" , "refresh_token")
-			.accessTokenValiditySeconds(1800)
-			.refreshTokenValiditySeconds(86400)
+			.accessTokenValiditySeconds(180) //1800
+			.refreshTokenValiditySeconds(86400) // 86400
 		.and()
 			.withClient("mobile")
 			.secret("$2a$10$XABkCmiqVzr5B6nKjf93VOGMQSlSSgZWqXEOt4wLpR5qSHmcPv6RG")
@@ -55,12 +55,12 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		tokenEnhancerChain.setTokenEnhancers(Arrays.asList(tokenEnhancer(), accessTokenConverter()));
 		
 		
-//		endpoints
-//		.tokenStore(tokenStore())
-//		.accessTokenConverter(this.accessTokenConverter())
-//		.reuseRefreshTokens(false)
-//		.userDetailsService(this.userDetailsService)
-//		.authenticationManager(this.authenticationManager);
+		endpoints
+		.tokenStore(tokenStore())
+		.accessTokenConverter(this.accessTokenConverter())
+		.reuseRefreshTokens(false)
+		.userDetailsService(this.userDetailsService)
+		.authenticationManager(this.authenticationManager);
 		
 		endpoints
 			.tokenStore(tokenStore())
