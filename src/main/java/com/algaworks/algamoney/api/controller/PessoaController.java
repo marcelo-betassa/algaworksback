@@ -1,6 +1,5 @@
 package com.algaworks.algamoney.api.controller;
 
-import java.util.List;
 import java.util.Optional;
 
 import javax.servlet.http.HttpServletResponse;
@@ -52,7 +51,7 @@ public class PessoaController {
 	@PostMapping
 	@PreAuthorize("hasAuthority('ROLE_CADASTRAR_PESSOA') and #oauth2.hasScope('write')")
 	public ResponseEntity<Pessoa> criarPessoa(@Valid @RequestBody Pessoa pessoa , HttpServletResponse response) {
-		Pessoa pessoaSalva = pessoaRepository.save(pessoa);
+		Pessoa pessoaSalva = pessoaService.salvar(pessoa);
 		publisher.publishEvent(new RecursoCriadoEvent(this, response, pessoa.getCodigo()));
 		return ResponseEntity.status(HttpStatus.CREATED).body(pessoaSalva);
 	}

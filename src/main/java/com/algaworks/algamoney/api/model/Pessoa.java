@@ -1,18 +1,23 @@
 package com.algaworks.algamoney.api.model;
 
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "pessoa")
@@ -37,6 +42,11 @@ public class Pessoa implements Serializable {
 	@Embedded
 	private Endereco endereco;
 
+	@Valid
+	@JsonIgnoreProperties("pessoa")
+	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
+	private List<Contato> contatos;
+	
 	
 	
 	@Override
@@ -96,6 +106,15 @@ public class Pessoa implements Serializable {
 		this.endereco = endereco;
 	}
 
+	public List<Contato> getContatos() {
+		return contatos;
+	}
+
+	public void setContatos(List<Contato> contatos) {
+		this.contatos = contatos;
+	}
+
+	
 	@JsonIgnore
 	@Transient
 	public boolean isInativo() {

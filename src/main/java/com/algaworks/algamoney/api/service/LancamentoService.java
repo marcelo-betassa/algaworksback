@@ -11,16 +11,21 @@ import java.util.Optional;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.algaworks.algamoney.api.dto.LancamentoEstatisticaPessoa;
+import com.algaworks.algamoney.api.mail.Mailer;
 import com.algaworks.algamoney.api.model.Lancamento;
 import com.algaworks.algamoney.api.model.Pessoa;
+import com.algaworks.algamoney.api.model.Usuario;
 import com.algaworks.algamoney.api.repository.LancamentoRepository;
 import com.algaworks.algamoney.api.repository.PessoaRepository;
+import com.algaworks.algamoney.api.repository.UsuarioRepository;
 import com.algaworks.algamoney.api.service.exception.LancamentoInexistenteExecption;
 import com.algaworks.algamoney.api.service.exception.PessoaInexistenteOuInativaException;
 
@@ -33,11 +38,21 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 @Service
 public class LancamentoService {
 
+	private static final String DESTINATARIOS ="ROLE_PESQUISAR_LANCAMENTO";
+	
+	private static final Logger logger = LoggerFactory.getLogger(LancamentoService.class);
+	
 	@Autowired
 	private PessoaRepository pessoaRepository;
 
 	@Autowired
 	private LancamentoRepository lancamentoRepository;
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Autowired
+	private Mailer mailer;
 
 	public Lancamento save(@Valid Lancamento lancamento) {
 		Optional<Pessoa> pessoa = pessoaRepository.findById(lancamento.getPessoa().getCodigo());
@@ -91,9 +106,26 @@ public class LancamentoService {
 
 	}
 	
-	@Scheduled(cron = "0 21 07 * * *", zone = "America/Sao_Paulo")
+	@Scheduled(cron = "0 0 6 * * *", zone = "America/Sao_Paulo")
 	public void avisarSobreLancamentoVencido() {
-		System.out.println(">>>>>>>>>>>>>> metodo sendo executado...");
+		if (logger.isDebugEnabled()) {
+			logger.debug("Preparando envio de e-mails de aviso de lançamentos vencidos");
+		}
+		List<Lancamento> vencidos = lancamentoRepository
+				.findByDataVencimentoLessThanEqualAndDataPagamentoIsNull(LocalDate.now());
+		if (vencidos.isEmpty()) {
+			logger.info("Sem lancçamentos vencidos para aviso.");
+			return;
+		}
+		logger.info("Existem {} lançamentos vencidos", vencidos.size());
+		List<Usuario> destinatarios = usuarioRepository.findByPermissoesDescricao(DESTINATARIOS);
+		if (destinatarios.isEmpty()) {
+			logger.warn("Existem lançamentos vencidos mas o sistema não encontrou destinatários!");
+			return;
+		}
+
+		mailer.avisarSobreLancamentosVencidos(vencidos, destinatarios);
+		logger.info("Envio de e-mail de aviso concluído!");
 	}
 
 }
