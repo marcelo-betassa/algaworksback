@@ -48,8 +48,8 @@ import net.sf.jasperreports.engine.JRException;
 @RequestMapping("/lancamentos")
 public class LancamentoController {
 
-	@Autowired
-	private S3 s3;
+//	@Autowired
+//	private S3 s3;
 	
 	@Autowired
 	private LancamentoRepository lancamentoRepository;
