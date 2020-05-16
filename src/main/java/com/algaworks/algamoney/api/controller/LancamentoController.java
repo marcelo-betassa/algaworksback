@@ -1,6 +1,5 @@
 package com.algaworks.algamoney.api.controller;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -41,6 +40,7 @@ import com.algaworks.algamoney.api.repository.LancamentoRepository;
 import com.algaworks.algamoney.api.repository.filter.LancamentoFilter;
 import com.algaworks.algamoney.api.repository.projection.ResumoLancamento;
 import com.algaworks.algamoney.api.service.LancamentoService;
+import com.algaworks.algamoney.api.storage.S3;
 
 import net.sf.jasperreports.engine.JRException;
 
@@ -48,6 +48,9 @@ import net.sf.jasperreports.engine.JRException;
 @RequestMapping("/lancamentos")
 public class LancamentoController {
 
+	@Autowired
+	private S3 s3;
+	
 	@Autowired
 	private LancamentoRepository lancamentoRepository;
 	
@@ -130,6 +133,7 @@ public class LancamentoController {
 		OutputStream outPutS = new FileOutputStream("C://Users//Marcelo//Desktop//anexo--" + anexo.getOriginalFilename());
 		outPutS.write(anexo.getBytes());
 		outPutS.close();
+	
 		return "OK";
 		
 	}
